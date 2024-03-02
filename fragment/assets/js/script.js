@@ -116,8 +116,8 @@ function resetForm() {
     $('#concurrency').val("");
     $('#fingerprint option[value="chrome"]').attr('selected', 'selected').prop('selected', true);
     $('#packets').val('tlshello');
-    $('#length').val('10-20');
-    $('#interval').val('10-20');
+    $('#length').val('222-333');
+    $('#interval').val('5-10');
 }
 
 $(document).on('keyup', '#defConfig', function(e) {
