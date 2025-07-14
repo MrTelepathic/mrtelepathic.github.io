@@ -31,7 +31,7 @@ function renderData(dataArray) {
         }
     });
     let loadMore = '<div class="clearfix"></div>';
-    loadMore += '<a class="btn btn-warning btn-block" href="https://github.com/ircfspace/endpoint/blob/main/ip.json" dir="rtl" target="_blank">';
+    loadMore += '<a class="btn btn-warning btn-block" href="https://mrtelepathic.github.io/endpoint/ip.json" dir="rtl" target="_blank">';
     loadMore += 'مشاهده بیشتر';
     loadMore += '</a>';
     $('#setContent').html(html+loadMore);
@@ -50,7 +50,7 @@ window.addEventListener('load', function() {
     if (cachedData !== "undefined" && cachedTime !== "undefined" && (Date.now() - cachedTime < 15 * 60 * 1000)) {
         renderData(cachedData);
     } else {
-        fetch('https://raw.githubusercontent.com/ircfspace/endpoint/main/ip.json')
+        fetch('https://mrtelepathic.github.io/endpoint/ip.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
